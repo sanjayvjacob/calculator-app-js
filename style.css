@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: hsl(0, 0%, 95%);
+}
+
+#calculator{
+font-family: "Roboto", sans-serif;
+background-color: hsl(0, 0%, 15%);
+border-radius: 15px;
+max-width: 500px;
+overflow: hidden;
+}
+
+#display{
+  width: 100%;
+  padding: 20px;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+}
+
+#keys{
+  display: grid;
+  grid-template-columns: repeat(3,1fr)2fr;
+  gap: 10px;
+  padding: 25px;
+}
+
+button{
+  background-color: hsl(0, 0%, 25%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+button:nth-child(17) {
+  width: 200px;
+  grid-column: span 2;
+}
+
+button:hover{
+  background-color: hsl(0, 0%, 35%);
+}
+
+button:active{
+  background-color: hsl(0, 0%, 45%);
+}
+
+.orange-btn{
+  background-color: hsl(35, 100%, 55%);
+}
+
+.grey-btn{
+  background-color: hsl(0, 0%, 50%);
+  color: black;
+}
+
+.operator-btn:hover{
+  background-color: hsl(35, 100%, 65%);
+}
+
+.operator-btn:active{
+  background-color: hsl(35, 100%, 75%);
+}
